@@ -1,0 +1,209 @@
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<BorderPane fx:controller="main.Client"
+            xmlns:fx="http://javafx.com/fxml"
+            prefHeight="800" prefWidth="1500"
+            stylesheets="@../style/table.css">
+    <top>
+        <BorderPane>
+            <center>
+                <Label text="ROULETTE" styleClass="label-main" alignment="CENTER"/>
+            </center>
+            <right>
+                <Label fx:id="balanceValue" text="Balance: 1000 RSD" alignment="CENTER_RIGHT" styleClass="labels-top"/>
+            </right>
+            <left>
+                <Label text="Previous numbers:" styleClass="labels-top"/>
+            </left>
+        </BorderPane>
+    </top>
+    <center>
+        <BorderPane>
+            <center>
+                <GridPane vgap="0" hgap="0" alignment="center">
+                    <JFXButton text="0" fx:id="0" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.rowSpan="3"
+                               styleClass="field-green" onAction="#clickBetListener"/>
+                    <JFXButton text="1" fx:id="1" GridPane.columnIndex="1" GridPane.rowIndex="2"
+                               styleClass="field-red" onAction="#clickBetListener"/>
+                    <JFXButton text="2" fx:id="2" GridPane.columnIndex="1" GridPane.rowIndex="1"
+                               styleClass="field-black" onAction="#clickBetListener"/>
+                    <JFXButton text="3" fx:id="3" GridPane.columnIndex="1" GridPane.rowIndex="0"
+                               styleClass="field-red" onAction="#clickBetListener"/>
+                    <JFXButton text="4" fx:id="4" GridPane.columnIndex="2" GridPane.rowIndex="2"
+                               styleClass="field-black" onAction="#clickBetListener"/>
+                    <JFXButton text="5" fx:id="5" GridPane.columnIndex="2" GridPane.rowIndex="1"
+                               styleClass="field-red" onAction="#clickBetListener"/>
+                    <JFXButton text="6" fx:id="6" GridPane.columnIndex="2" GridPane.rowIndex="0"
+                               styleClass="field-black" onAction="#clickBetListener"/>
+                    <JFXButton text="7" fx:id="7" GridPane.columnIndex="3" GridPane.rowIndex="2"
+                               styleClass="field-red" onAction="#clickBetListener"/>
+                    <JFXButton text="8" fx:id="8" GridPane.columnIndex="3" GridPane.rowIndex="1"
+                               styleClass="field-black" onAction="#clickBetListener"/>
+                    <JFXButton text="9" fx:id="9" GridPane.columnIndex="3" GridPane.rowIndex="0"
+                               styleClass="field-red" onAction="#clickBetListener"/>
+                    <JFXButton text="10" fx:id="10" GridPane.columnIndex="4" GridPane.rowIndex="2"
+                               styleClass="field-black" onAction="#clickBetListener"/>
+                    <JFXButton text="11" fx:id="11" GridPane.columnIndex="4" GridPane.rowIndex="1"
+                               styleClass="field-black" onAction="#clickBetListener"/>
+                    <JFXButton text="12" fx:id="12" GridPane.columnIndex="4" GridPane.rowIndex="0"
+                               styleClass="field-red" onAction="#clickBetListener"/>
+                    <JFXButton text="13" fx:id="13" GridPane.columnIndex="5" GridPane.rowIndex="2"
+                               styleClass="field-black" onAction="#clickBetListener"/>
+                    <JFXButton text="14" fx:id="14" GridPane.columnIndex="5" GridPane.rowIndex="1"
+                               styleClass="field-red" onAction="#clickBetListener"/>
+                    <JFXButton text="15" fx:id="15" GridPane.columnIndex="5" GridPane.rowIndex="0"
+                               styleClass="field-black" onAction="#clickBetListener"/>
+                    <JFXButton text="16" fx:id="16" GridPane.columnIndex="6" GridPane.rowIndex="2"
+                               styleClass="field-red" onAction="#clickBetListener"/>
+                    <JFXButton text="17" fx:id="17" GridPane.columnIndex="6" GridPane.rowIndex="1"
+                               styleClass="field-black" onAction="#clickBetListener"/>
+                    <JFXButton text="18" fx:id="18" GridPane.columnIndex="6" GridPane.rowIndex="0"
+                               styleClass="field-red" onAction="#clickBetListener"/>
+                    <JFXButton text="19" fx:id="19" GridPane.columnIndex="7" GridPane.rowIndex="2"
+                               styleClass="field-red" onAction="#clickBetListener"/>
+                    <JFXButton text="20" fx:id="20" GridPane.columnIndex="7" GridPane.rowIndex="1"
+                               styleClass="field-black" onAction="#clickBetListener"/>
+                    <JFXButton text="21" fx:id="21" GridPane.columnIndex="7" GridPane.rowIndex="0"
+                               styleClass="field-red" onAction="#clickBetListener"/>
+                    <JFXButton text="22" fx:id="22" GridPane.columnIndex="8" GridPane.rowIndex="2"
+                               styleClass="field-black" onAction="#clickBetListener"/>
+                    <JFXButton text="23" fx:id="23" GridPane.columnIndex="8" GridPane.rowIndex="1"
+                               styleClass="field-red" onAction="#clickBetListener"/>
+                    <JFXButton text="24" fx:id="24" GridPane.columnIndex="8" GridPane.rowIndex="0"
+                               styleClass="field-black" onAction="#clickBetListener"/>
+                    <JFXButton text="25" fx:id="25" GridPane.columnIndex="9" GridPane.rowIndex="2"
+                               styleClass="field-red" onAction="#clickBetListener"/>
+                    <JFXButton text="26" fx:id="26" GridPane.columnIndex="9" GridPane.rowIndex="1"
+                               styleClass="field-black" onAction="#clickBetListener"/>
+                    <JFXButton text="27" fx:id="27" GridPane.columnIndex="9" GridPane.rowIndex="0"
+                               styleClass="field-red" onAction="#clickBetListener"/>
+                    <JFXButton text="28" fx:id="28" GridPane.columnIndex="10" GridPane.rowIndex="2"
+                               styleClass="field-black" onAction="#clickBetListener"/>
+                    <JFXButton text="29" fx:id="29" GridPane.columnIndex="10" GridPane.rowIndex="1"
+                               styleClass="field-black" onAction="#clickBetListener"/>
+                    <JFXButton text="30" fx:id="30" GridPane.columnIndex="10" GridPane.rowIndex="0"
+                               styleClass="field-red" onAction="#clickBetListener"/>
+                    <JFXButton text="31" fx:id="31" GridPane.columnIndex="11" GridPane.rowIndex="2"
+                               styleClass="field-black" onAction="#clickBetListener"/>
+                    <JFXButton text="32" fx:id="32" GridPane.columnIndex="11" GridPane.rowIndex="1"
+                               styleClass="field-red" onAction="#clickBetListener"/>
+                    <JFXButton text="33" fx:id="33" GridPane.columnIndex="11" GridPane.rowIndex="0"
+                               styleClass="field-black" onAction="#clickBetListener"/>
+                    <JFXButton text="34" fx:id="34" GridPane.columnIndex="12" GridPane.rowIndex="2"
+                               styleClass="field-red" onAction="#clickBetListener"/>
+                    <JFXButton text="35" fx:id="35" GridPane.columnIndex="12" GridPane.rowIndex="1"
+                               styleClass="field-black" onAction="#clickBetListener"/>
+                    <JFXButton text="36" fx:id="36" GridPane.columnIndex="12" GridPane.rowIndex="0"
+                               styleClass="field-red" onAction="#clickBetListener"/>
+                    <JFXButton text="2-1" fx:id="211" GridPane.columnIndex="13" GridPane.rowIndex="2"
+                               styleClass="field-2to1" onAction="#clickBetListener"/>
+                    <JFXButton text="2-1" fx:id="212" GridPane.columnIndex="13" GridPane.rowIndex="1"
+                               styleClass="field-2to1" onAction="#clickBetListener"/>
+                    <JFXButton text="2-1" fx:id="213" GridPane.columnIndex="13" GridPane.rowIndex="0"
+                               styleClass="field-2to1" onAction="#clickBetListener"/>
+                    <JFXButton text="1st 12" fx:id="121" GridPane.columnIndex="1" GridPane.rowIndex="3"
+                               GridPane.columnSpan="4"
+                               styleClass="filed-12" onAction="#clickBetListener"/>
+                    <JFXButton text="2nd 12" fx:id="122" GridPane.columnIndex="5" GridPane.rowIndex="3"
+                               GridPane.columnSpan="4"
+                               styleClass="filed-12" onAction="#clickBetListener"/>
+                    <JFXButton text="3rd 12" fx:id="123" GridPane.columnIndex="9" GridPane.rowIndex="3"
+                               GridPane.columnSpan="4"
+                               styleClass="filed-12" onAction="#clickBetListener"/>
+                    <JFXButton text="1-18" fx:id="118" GridPane.columnIndex="1" GridPane.rowIndex="4"
+                               GridPane.columnSpan="2"
+                               styleClass="field-small" onAction="#clickBetListener"/>
+                    <JFXButton text="Even" fx:id="40" GridPane.columnIndex="3" GridPane.rowIndex="4"
+                               GridPane.columnSpan="2"
+                               styleClass="field-small" onAction="#clickBetListener"/>
+                    <JFXButton text="Red" fx:id="42" GridPane.columnIndex="5" GridPane.rowIndex="4"
+                               GridPane.columnSpan="2"
+                               styleClass="field-red-big" onAction="#clickBetListener"/>
+                    <JFXButton text="Black" fx:id="43" GridPane.columnIndex="7" GridPane.rowIndex="4"
+                               GridPane.columnSpan="2"
+                               styleClass="field-black-big" onAction="#clickBetListener"/>
+                    <JFXButton text="Odd" fx:id="41" GridPane.columnIndex="9" GridPane.rowIndex="4"
+                               GridPane.columnSpan="2"
+                               styleClass="field-small" onAction="#clickBetListener"/>
+                    <JFXButton text="19-36" fx:id="1936" GridPane.columnIndex="11" GridPane.rowIndex="4"
+                               GridPane.columnSpan="2"
+                               styleClass="field-small" onAction="#clickBetListener"/>
+                    <JFXButton text="Third of the wheel" fx:id="50" GridPane.columnIndex="14" GridPane.rowIndex="2"
+                               styleClass="field-big" onAction="#clickBetListener"/>
+                    <JFXButton text="Zero game" fx:id="51" GridPane.columnIndex="14" GridPane.rowIndex="1"
+                               styleClass="field-big" onAction="#clickBetListener"/>
+                    <JFXButton text="Orphans" fx:id="52" GridPane.columnIndex="14" GridPane.rowIndex="0"
+                               styleClass="field-big" onAction="#clickBetListener"/>
+                </GridPane>
+            </center>
+            <bottom>
+                <HBox styleClass="buttons-hbox">
+                    <JFXButton text="-" fx:id="minusButton" styleClass="plus-minus" onAction="#decreaseBet"/>
+                    <Label text="100" fx:id="betValueLabel" styleClass="label-bet"/>
+                    <JFXButton text="+" fx:id="plusButton" styleClass="plus-minus" onAction="#increaseBet"/>
+                </HBox>
+            </bottom>
+            <top>
+                <VBox alignment="BOTTOM_CENTER">
+                    <Label fx:id="timer" text="00:00" styleClass="timer"/>
+                    <Label fx:id="number" text="" styleClass="selected-number"/>
+                </VBox>
+            </top>
+        </BorderPane>
+    </center>
+    <right>
+        <VBox alignment="CENTER_LEFT" prefWidth="200" styleClass="bets-vbox">
+            <Label text="Bets:" styleClass="bets"/>
+            <Label fx:id="label0" text="0: 0 RSD" styleClass="bets"/>
+            <Label fx:id="label1" text="1: 0 RSD" styleClass="bets"/>
+            <Label fx:id="label2" text="2: 0 RSD" styleClass="bets"/>
+            <Label fx:id="label3" text="3: 0 RSD" styleClass="bets"/>
+            <Label fx:id="label4" text="4: 0 RSD" styleClass="bets"/>
+            <Label fx:id="label5" text="5: 0 RSD" styleClass="bets"/>
+            <Label fx:id="label6" text="6: 0 RSD" styleClass="bets"/>
+            <Label fx:id="label7" text="7: 0 RSD" styleClass="bets"/>
+            <Label fx:id="label8" text="8: 0 RSD" styleClass="bets"/>
+            <Label fx:id="label9" text="9: 0 RSD" styleClass="bets"/>
+            <Label fx:id="label10" text="10: 0 RSD" styleClass="bets"/>
+            <Label fx:id="label11" text="11: 0 RSD" styleClass="bets"/>
+            <Label fx:id="label12" text="12: 0 RSD" styleClass="bets"/>
+            <Label fx:id="label13" text="13: 0 RSD" styleClass="bets"/>
+            <Label fx:id="label14" text="14: 0 RSD" styleClass="bets"/>
+            <Label fx:id="label15" text="15: 0 RSD" styleClass="bets"/>
+            <Label fx:id="label16" text="16: 0 RSD" styleClass="bets"/>
+            <Label fx:id="label17" text="17: 0 RSD" styleClass="bets"/>
+            <Label fx:id="label18" text="18: 0 RSD" styleClass="bets"/>
+            <Label fx:id="label19" text="19: 0 RSD" styleClass="bets"/>
+            <Label fx:id="label20" text="20: 0 RSD" styleClass="bets"/>
+            <Label fx:id="label21" text="21: 0 RSD" styleClass="bets"/>
+            <Label fx:id="label22" text="22: 0 RSD" styleClass="bets"/>
+            <Label fx:id="label23" text="23: 0 RSD" styleClass="bets"/>
+            <Label fx:id="label24" text="24: 0 RSD" styleClass="bets"/>
+            <Label fx:id="label25" text="25: 0 RSD" styleClass="bets"/>
+            <Label fx:id="label26" text="26: 0 RSD" styleClass="bets"/>
+            <Label fx:id="label27" text="27: 0 RSD" styleClass="bets"/>
+            <Label fx:id="label28" text="28: 0 RSD" styleClass="bets"/>
+            <Label fx:id="label29" text="29: 0 RSD" styleClass="bets"/>
+            <Label fx:id="label30" text="30: 0 RSD" styleClass="bets"/>
+            <Label fx:id="label31" text="31: 0 RSD" styleClass="bets"/>
+            <Label fx:id="label32" text="32: 0 RSD" styleClass="bets"/>
+            <Label fx:id="label33" text="33: 0 RSD" styleClass="bets"/>
+            <Label fx:id="label34" text="34: 0 RSD" styleClass="bets"/>
+            <Label fx:id="label35" text="35: 0 RSD" styleClass="bets"/>
+            <Label fx:id="label36" text="36: 0 RSD" styleClass="bets"/>
+        </VBox>
+    </right>
+    <left>
+        <VBox prefWidth="200">
+            <TextArea fx:id="prNums" editable="false" prefWidth="10" prefHeight="100" text="" styleClass="textarea-numbers"
+            wrapText="true"/>
+            <Label text="Online users:" styleClass="labels-top"/>
+            <TextArea fx:id="onlineUsers" editable="false" text="Lista online korisnika" styleClass="textarea-numbers"/>
+        </VBox>
+    </left>
+</BorderPane>
